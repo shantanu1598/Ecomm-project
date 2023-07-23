@@ -13,11 +13,12 @@ export class SellerAuthComponent {
   ngOnInit(): void {}
   signup(data: SignUp): void {
     // console.warn(data);
-    this.seller.userSignUp(data).subscribe((result) => {
-      console.warn(result);
-      if (result) {
-        this.router.navigate(['seller-home']);
-      }
-    });
+    this.seller.userSignUp(data);
+    // .subscribe((result) => {
+    //   console.warn(result);
+    //   if (result) {
+    //     this.router.navigate(['seller-home']);
+    //   }
+    // });
   }
 }
